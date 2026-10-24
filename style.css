@@ -1,0 +1,15 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h1,h2,h3,p {
+	font-family: "Times New Roman", Times, serif;
+}
+
+nav,header,footer{
+	font-family: "Times New Roman", Times, serif;
+}
+

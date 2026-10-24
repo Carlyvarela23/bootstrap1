@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Push, Pull, Legs Workout Tracker">
+    <meta name="author" content="Carly Varela">
+    <title>Starter Template · Bootstrap v5.3.8</title>
+
+   <!-- Bootstrap v5.3.8 -->
+   
+   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- END LOADING BOOTSTRAP CSS -->
+    
+   <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  
+  </head>
+
+ 
+  <body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#top">Workout Tracker</a>
+
+      <button class="navbar-toggler" type="button"
+      data-be-toggle="collapse" data-bs-target="#navigation"
+      aria-controls="navigation" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#today">Today's Workout</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#exercises">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#add">Add Exercise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">Workout History</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="container">
+  <header class="col">
+    <div class="col-md-12">
+      <img src="ppl.png" class="img-fluid" alt="Diagram of Push, Pull, and Leg Exercises" style="width:100%;height:100%;">
+    </div>
+  </header>
+</div>
+<!-- AI Use Disclosure:
+Tool: ChatGPT (free)
+Purpose: struggled with the width of my image because it seemed like it was stuck at a certain width and it suggested to chanf the "col-md" from 4-12 as I did not realize I had not changed that
+Human Role: Verified the response and made sure the selection I used was something I still understood.
+-->
+
+    <header class="container py-5" id="top">
+      <h1> Workout Tracker</h1>
+      <p>Record workouts to track exercises, sets, reps, and weights.</p>
+      <a class="btn btn-primary" href=#today>Start Today's Workout</a>
+    </header>
+
+    <main class="container">
+      <!-- Today's Workout -->
+      <section id="today" class="mb-5">
+        <h2>Today's Workout</h2>
+        <p>Choose your workout day and record your progress.</p>
+
+        <form>
+            <div class="mb-3">
+                <label for="workout-type" class="form-label">Workout Day</label>
+                <select class="form-select" id="workout-type" name="workout-type">
+                  <option value="">Choose a workout</option>
+                  <option value="push">Push Day</option>
+                  <option value="pull">Pull Day</option>
+                  <option value="legs">Leg Day</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="workout-notes" class="form-label">Workout Notes</label>
+                <textarea class="form-control" id="workout-notes"
+                  name="workout-notes" rows="3"
+                  placeholder="Record your effort or progress"></textarea>
+                </div>
+              </form>
+            </section>
+
+
+<!-- Exercise Cards -->
+  <section id="exercises" class="mb-5">
+    <h2> Exercise Lists</h2>
+    <p>Select the exercises you plan to complete.</p>
+
+    <div class="row g-4">
+
+      <!-- Push Day -->
+      <div class="col-12 col-md-6 col-lg-4" id="push-day-exercises">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Push Day</h3>
+          <p class="card-text">Chest, Shoulders, and Triceps</p>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push1">
+        <label class="form-check-label" for="push1">Dumbbell Bench Press</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push2">
+        <label class="form-check-label" for="push2">Dumbbell Lateral Raises</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push3">
+        <label class="form-check-label" for="push3">Dumbbell Incline Bench Press</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push4">
+        <label class="form-check-label" for="push4">Dumbbell Shoulder Press</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push5">
+        <label class="form-check-label" for="push5">Cable Chest Fly</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push6">
+        <label class="form-check-label" for="push6">Tricep Extenstion</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="push7">
+        <label class="form-check-label" for="push7">Overhead Tricep Extension</label>
+        </div>
+      </div>
+     </div>
+  </div>
+
+      <!-- Pull Day -->
+      <div class="col-12 col-md-6 col-lg-4" id="pull-day-exercises">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Pull Day</h3>
+            <p class="card-text"> Back, biceps, and abs</p>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull1">
+              <label class="form-check-label" for="pull1">Lat Pulldown</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull2">
+              <label class="form-check-label" for="pull2">Seated Row</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull3">
+              <label class="form-check-label" for="pull3">One Arm Row</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull4">
+              <label class="form-check-label" for="pull4">Rear Delt Fly</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull5">
+              <label class="form-check-label" for="pull5">Straight Arm Pulldown</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull6">
+              <label class="form-check-label" for="pull6">One Arm Bayesian Curl</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull7">
+              <label class="form-check-label" for="pull7">Cable Bicep Curl</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull8">
+              <label class="form-check-label" for="pull8">Cable Hammer Curl</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull9">
+              <label class="form-check-label" for="pull9">Weighted Back Extension</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pull10">
+              <label class="form-check-label" for="pull10">Kneeling Cable Crunches</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leg Day -->
+      <div class="col-12 col-md-6 col-lg-4" id="leg-day-exercises">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Leg Day</h3>
+            <p class="card-text">Lower Body exercises.</p>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg1">
+              <label class="form-check-label" for="leg1">Barbell Back Squat</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg2">
+              <label class="form-check-label" for="leg2">Barbell Romanian Deadlift</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg3">
+              <label class="form-check-label" for="leg3">Hack Squat</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg4">
+              <label class="form-check-label" for="leg4">Barbell Hip Thrust</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg5">
+              <label class="form-check-label" for="leg5">Leg Extension</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg6">
+              <label class="form-check-label" for="leg6">Hamstring Curl</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg7">
+              <label class="form-check-label" for="leg7">Hip Abduction</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg8">
+              <label class="form-check-label" for="leg8">Hip Adduction</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="leg9">
+              <label class="form-check-label" for="leg9">Standing Calf Raises</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Exercise Form -->
+    <section id="add" class="mb-5">
+      <h2>Add Exercise</h2>
+      <p>Enter the exercise details you want to track.</p>
+
+      <form>
+        <div class="mb-3">
+          <label for="exercise" class="form-label">Exercise Name</label>
+          <input type="text" class="form-control" id="exercise" name="exercise">
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="sets" class="form-label">Sets</label>
+            <input type="number" class="form-control" id="sets" name="sets" min="1">
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="reps" class="form-label">Reps</label>
+            <input type="number" class="form-control" id="reps" name="reps" min="1">
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="weight" class="form-label">Weight (lbs)</label>
+            <input type="number" class="form-control" id="weight" name="weight" min="0">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Exercise</button>
+      </form>
+    </section>
+
+
+    <!-- Workout History -->
+    <section id="history" class="mb-5">
+      <h2>Past Workouts</h2>
+
+      <div class="list-group">
+        <div class="list-group-item">
+          <h3 class="h5">October 16 - Push Day</h3>
+          <p class="mb-0">Dumbbell Bench Press: 3 sets of 10 with 30 lbs</p>
+          <p class="mb-0">Dumbbell Shoulder Press: 3 sets of 10 with 20 lbs</p>
+          <p class="mb-0">Cable Chest Fly: 3 sets of 12 with 35 lbs</p>
+        </div>
+
+        <div class="list-group-item">
+          <h3 class="h5">October 15 - Leg Day</h3>
+          <p class="mb-0">Barbell Back Squat: 3 sets of 10 with 135 lbs</p>
+          <p class="mb-0">Leg Extension: 3 sets of 12 with 90 lbs</p>
+          <p class="mb-0">Hamstring curl: 3 sets of 12 with 65 lbs</p>
+          <p class="mb-0">Standing Calf Raises: 3 sets of 15 with 20 lbs</p>
+        </div>
+        
+        <div class="list-group-item">
+          <h3 class="h5">October 13 - Back Day</h3>
+          <p class="mb-0">Lat Pulldown: 3 sets of 10 with 100 lbs</p>
+          <p class="mb-0">Seated Row: 3 sets of 10 with 35 lbs</p>
+          <p class="mb-0">One Arm Bayesian Curl: 3 sets of 10 with 20lbs each arm</p>
+          <p class="mb-0">Standing Calf Raises: 3 sets of 15 with 20 lbs</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">Workout Tracker</p>
+    </footer>
+
+
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+      
+  </body>
+</html>
